@@ -71,14 +71,7 @@
 <div align="center">
 
 | Project | Stack | Status |
-|:---|:---|:---:|
-| 🚀 **Bidzy** | Next.js · .NET · POS System | `✅ Complete` |
-| 📱 **Cross-Platform Mobile App** | Flutter · Dart · BLoC | `✅ Complete` |
-| 🌐 **Modern Web Interface** | React · Next.js · Figma | `✅ Complete` |
-| 🏢 **Enterprise App Module** | Java EE · SQL Server | `✅ Complete` |
-| 🤖 **AI Assignment Helper** | Python · Streamlit · Groq API | `✅ Complete` |
-| 🧪 **SQA Implementation** | Manual Testing · Test Plans | `✅ Complete` |
-
+![projects](https://raw.githubusercontent.com/Shakila46/Shakila46/main/projects_table.svg)
 </div>
 
 ---
