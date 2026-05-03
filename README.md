@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Header Banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,50:0a0a2e,100:00ffff&height=200&section=header&text=SHAKILA%20PRAWEEN&fontSize=50&fontColor=00ffff&fontAlignY=38&desc=Software%20Engineer%20%7C%20Mobile%20%26%20Full-Stack%20Developer&descAlignY=58&descSize=16&descColor=7B68EE&animation=twinkling" />
+![header](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=40&duration=4000&pause=1000&color=00FFFF&center=true&vCenter=true&width=700&height=100&lines=SHAKILA+PRAWEEN%3BSoftware+Engineer)
 
 <!-- Typing Animation -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&duration=3000&pause=800&color=00FFFF&center=true&vCenter=true&multiline=false&width=600&lines=%3E+Initializing+dev+environment...;%3E+Loading+Flutter+%2B+React+%2B+Next.js...;%3E+Building+cross-platform+apps+%F0%9F%93%B1;%3E+Deploying+AI-powered+solutions+%F0%9F%A4%96;%3E+Status%3A+READY+TO+BUILD+%E2%9C%85)](https://git.io/typing-svg)
@@ -134,4 +134,10 @@
 <br/>
 
 <!-- Footer -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00ffff,50:0a0a2e,100:0d0d0d&height=120&section=footer&text=KEEP+BUILDING+%F0%9F%9A%80&fontSize=20&fontColor=00ffff&fontAlignY=65" />
+---
+
+<div align="center">
+
+![footer](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=18&duration=3000&pause=1000&color=00FFFF&center=true&vCenter=true&width=500&height=60&lines=KEEP+BUILDING+%F0%9F%9A%80%3BNever+stop+shipping+%E2%9C%85)
+
+</div>
