@@ -1,0 +1,169 @@
+<svg width="900" height="180" viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+
+      .bg { fill: #0d0d0d; }
+      .grid-line { stroke: #00ffff; stroke-width: 0.3; opacity: 0.12; }
+      .name { font-family: 'Share Tech Mono', monospace; font-size: 52px; font-weight: 700; fill: #00ffff; }
+      .sub  { font-family: 'Share Tech Mono', monospace; font-size: 15px; fill: #7B68EE; letter-spacing: 4px; }
+      .tag  { font-family: 'Share Tech Mono', monospace; font-size: 12px; fill: #00ffff; opacity: 0.5; }
+      .bar  { fill: none; stroke: #00ffff; stroke-width: 1.5; opacity: 0.3; }
+      .dot  { fill: #00ffff; }
+      .glitch1 { fill: #ff00ff; opacity: 0; }
+      .glitch2 { fill: #00ffff; opacity: 0; }
+      .corner { stroke: #00ffff; stroke-width: 1.5; fill: none; opacity: 0.6; }
+
+      /* Flicker animation */
+      .name {
+        animation: flicker 6s infinite;
+      }
+      @keyframes flicker {
+        0%,19%,21%,23%,25%,54%,56%,100% { opacity: 1; }
+        20%,24%,55% { opacity: 0.6; }
+      }
+
+      /* Glitch */
+      .glitch1 {
+        animation: glitch1 4s infinite;
+      }
+      @keyframes glitch1 {
+        0%,94%,100% { opacity: 0; transform: translate(0,0); }
+        95% { opacity: 0.5; transform: translate(-3px, 1px); }
+        97% { opacity: 0.3; transform: translate(3px,-1px); }
+      }
+
+      .glitch2 {
+        animation: glitch2 4s infinite;
+      }
+      @keyframes glitch2 {
+        0%,94%,100% { opacity: 0; transform: translate(0,0); }
+        95% { opacity: 0.4; transform: translate(3px,-2px); }
+        97% { opacity: 0.2; transform: translate(-2px,2px); }
+      }
+
+      /* Scan line */
+      .scanline {
+        fill: url(#scangrad);
+        animation: scan 3s linear infinite;
+      }
+      @keyframes scan {
+        0%   { transform: translateY(-180px); }
+        100% { transform: translateY(180px); }
+      }
+
+      /* Sub text blink */
+      .cursor {
+        animation: blink 1s step-end infinite;
+        fill: #00ffff;
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 52px;
+      }
+      @keyframes blink {
+        0%,100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      /* Dots pulse */
+      .pulse {
+        animation: pulse 2s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%,100% { opacity: 1; r: 3; }
+        50% { opacity: 0.3; r: 1.5; }
+      }
+      .pulse2 {
+        animation: pulse 2s ease-in-out infinite 0.4s;
+      }
+      .pulse3 {
+        animation: pulse 2s ease-in-out infinite 0.8s;
+      }
+
+      /* Corner line draw */
+      .corner-tl { stroke-dasharray: 40; stroke-dashoffset: 40; animation: draw 1s ease forwards 0.2s; }
+      .corner-tr { stroke-dasharray: 40; stroke-dashoffset: 40; animation: draw 1s ease forwards 0.4s; }
+      .corner-bl { stroke-dasharray: 40; stroke-dashoffset: 40; animation: draw 1s ease forwards 0.6s; }
+      .corner-br { stroke-dasharray: 40; stroke-dashoffset: 40; animation: draw 1s ease forwards 0.8s; }
+      @keyframes draw {
+        to { stroke-dashoffset: 0; }
+      }
+
+      /* Tag fade in */
+      .tag-left  { animation: fadein 1s ease forwards 1s; opacity: 0; }
+      .tag-right { animation: fadein 1s ease forwards 1.2s; opacity: 0; }
+      @keyframes fadein {
+        to { opacity: 0.5; }
+      }
+    </style>
+
+    <linearGradient id="scangrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#00ffff" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#00ffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#00ffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="clip">
+      <rect width="900" height="180"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="180" class="bg"/>
+
+  <!-- Grid lines horizontal -->
+  <line x1="0" y1="30"  x2="900" y2="30"  class="grid-line"/>
+  <line x1="0" y1="60"  x2="900" y2="60"  class="grid-line"/>
+  <line x1="0" y1="90"  x2="900" y2="90"  class="grid-line"/>
+  <line x1="0" y1="120" x2="900" y2="120" class="grid-line"/>
+  <line x1="0" y1="150" x2="900" y2="150" class="grid-line"/>
+
+  <!-- Grid lines vertical -->
+  <line x1="100" y1="0" x2="100" y2="180" class="grid-line"/>
+  <line x1="200" y1="0" x2="200" y2="180" class="grid-line"/>
+  <line x1="300" y1="0" x2="300" y2="180" class="grid-line"/>
+  <line x1="450" y1="0" x2="450" y2="180" class="grid-line"/>
+  <line x1="600" y1="0" x2="600" y2="180" class="grid-line"/>
+  <line x1="700" y1="0" x2="700" y2="180" class="grid-line"/>
+  <line x1="800" y1="0" x2="800" y2="180" class="grid-line"/>
+
+  <!-- Corner decorations -->
+  <g clip-path="url(#clip)">
+    <!-- Top left -->
+    <polyline points="18,50 18,18 50,18" class="corner corner-tl"/>
+    <!-- Top right -->
+    <polyline points="850,18 882,18 882,50" class="corner corner-tr"/>
+    <!-- Bottom left -->
+    <polyline points="18,130 18,162 50,162" class="corner corner-bl"/>
+    <!-- Bottom right -->
+    <polyline points="850,162 882,162 882,130" class="corner corner-br"/>
+
+    <!-- Tag left -->
+    <text x="22" y="14" class="tag tag-left">[ SYS_INIT ]</text>
+    <!-- Tag right -->
+    <text x="780" y="14" class="tag tag-right">[ v2.0.27 ]</text>
+
+    <!-- Glitch layers -->
+    <text x="100" y="108" class="name glitch1" clip-path="url(#clip)">SHAKILA PRAWEEN</text>
+    <text x="100" y="108" class="name glitch2" clip-path="url(#clip)">SHAKILA PRAWEEN</text>
+
+    <!-- Main name -->
+    <text x="100" y="108" class="name">SHAKILA PRAWEEN</text>
+    <text x="101" y="108" class="cursor">_</text>
+
+    <!-- Subtitle -->
+    <text x="102" y="138" class="sub">SOFTWARE ENGINEER</text>
+
+    <!-- Pulse dots -->
+    <circle cx="830" cy="80"  r="3" fill="#00ffff" class="pulse"/>
+    <circle cx="845" cy="80"  r="3" fill="#00ffff" class="pulse2"/>
+    <circle cx="860" cy="80"  r="3" fill="#00ffff" class="pulse3"/>
+
+    <!-- Bottom bar -->
+    <line x1="100" y1="155" x2="750" y2="155" class="bar"/>
+    <circle cx="100" cy="155" r="2.5" class="dot" opacity="0.6"/>
+    <circle cx="750" cy="155" r="2.5" class="dot" opacity="0.6"/>
+
+    <!-- Scan line -->
+    <rect width="900" height="40" class="scanline" clip-path="url(#clip)"/>
+  </g>
+</svg>
