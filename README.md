@@ -105,15 +105,23 @@
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Shakila46&show_icons=true&theme=cyberpunk&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d0d0d&title_color=00ffff&icon_color=7B68EE&text_color=ffffff"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Shakila46&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=false&border_color=00ffff&bg_color=0d0d0d&title_color=00ffff&icon_color=7B68EE&text_color=ffffff&ring_color=7B68EE" />
+&nbsp;
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shakila46&layout=compact&langs_count=8&theme=radical&hide_border=false&border_color=00ffff&bg_color=0d0d0d&title_color=00ffff&text_color=ffffff" />
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shakila46&layout=compact&langs_count=8&theme=cyberpunk&hide_border=true&bg_color=0d0d0d&title_color=00ffff&text_color=ffffff"/>
+</div>
+
+<br/>
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Shakila46&bg_color=0d0d0d&color=00ffff&line=7B68EE&point=00ffff&area=true&hide_border=true" width="95%"/>
 
 </div>
 
 <div align="center">
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=Shakila46&theme=cyberpunk&hide_border=true&background=0D0D0D&stroke=00ffff&ring=7B68EE&fire=00ffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00ffff&sideLabels=7B68EE&dates=888888)](https://git.io/streak-stats)
+[![GitHub Streak](https://nirzak-streak-stats.vercel.app?user=Shakila46&theme=radical&hide_border=false&border=00ffff&background=0D0D0D&stroke=00ffff&ring=7B68EE&fire=00ffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00ffff&sideLabels=7B68EE&dates=888888)](https://github.com/Shakila46)
 
 </div>
 
