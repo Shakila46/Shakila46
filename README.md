@@ -72,7 +72,7 @@
 
 | Project | Stack | Status |
 |:---|:---|:---:|
-| 🔨 **Bidzy** | *(Full Stack)* | `🟡 In Development` |
+| 🚀 **Bidzy** | *(Full Stack)* | `✅ Complete` |
 | 📱 **Cross-Platform Mobile App** | Flutter · Dart · BLoC | `✅ Complete` |
 | 🌐 **Modern Web Interface** | React · Next.js · Figma | `✅ Complete` |
 | 🏢 **Enterprise App Module** | Java EE · SQL Server | `✅ Complete` |
