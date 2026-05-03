@@ -90,7 +90,7 @@
 
 | Project | Stack | Status |
 |:---|:---|:---:|
-| 🚀 **Bidzy** | *(Full Stack)* | `✅ Complete` |
+| 🔨 **Bidzy** | *(Full Stack)* | `🟡 In Development` |
 | 📱 **Cross-Platform Mobile App** | Flutter · Dart · BLoC | `✅ Complete` |
 | 🌐 **Modern Web Interface** | React · Next.js · Figma | `✅ Complete` |
 | 🏢 **Enterprise App Module** | Java EE · SQL Server | `✅ Complete` |
@@ -105,7 +105,27 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Shakila46/Shakila46/main/github-metrics.svg" alt="GitHub Metrics" width="100%"/>
+| 📈 Metric | 🔢 Value |
+|:---|:---:|
+| 🗓️ GitHub Since | Aug 2024 |
+| 💻 Total Contributions | 101+ |
+| 🔥 Longest Streak | 4 days |
+| 🌐 Languages Used | 15+ |
+| 📦 Repositories | 13+ |
+
+</div>
+
+<br/>
+
+### 🐍 CONTRIBUTION SNAKE
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shakila46/Shakila46/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shakila46/Shakila46/output/github-contribution-grid-snake.svg"/>
+  <img alt="snake animation" src="https://raw.githubusercontent.com/Shakila46/Shakila46/output/github-contribution-grid-snake.svg"/>
+</picture>
 
 </div>
 
