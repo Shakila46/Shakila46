@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Header Banner -->
-![header](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=40&duration=4000&pause=1000&color=00FFFF&center=true&vCenter=true&width=700&height=100&lines=SHAKILA+PRAWEEN%3BSoftware+Engineer)
+![banner](https://raw.githubusercontent.com/Shakila46/Shakila46/main/banner.svg)
 
 <!-- Typing Animation -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=20&duration=3000&pause=800&color=00FFFF&center=true&vCenter=true&multiline=false&width=600&lines=%3E+Initializing+dev+environment...;%3E+Loading+Flutter+%2B+React+%2B+Next.js...;%3E+Building+cross-platform+apps+%F0%9F%93%B1;%3E+Deploying+AI-powered+solutions+%F0%9F%A4%96;%3E+Status%3A+READY+TO+BUILD+%E2%9C%85)](https://git.io/typing-svg)
@@ -90,7 +90,7 @@
 
 | Project | Stack | Status |
 |:---|:---|:---:|
-| 🚀 **Bidzy** | *(Full Stack)* | `✅ Complete` |
+| 🔨 **Bidzy** | *(Full Stack)* | `🟡 In Development` |
 | 📱 **Cross-Platform Mobile App** | Flutter · Dart · BLoC | `✅ Complete` |
 | 🌐 **Modern Web Interface** | React · Next.js · Figma | `✅ Complete` |
 | 🏢 **Enterprise App Module** | Java EE · SQL Server | `✅ Complete` |
