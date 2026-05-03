@@ -1,114 +1,183 @@
 <svg width="860" height="420" viewBox="0 0 860 420" xmlns="http://www.w3.org/2000/svg">
 <defs>
   <style>
-    .bg{fill:#0d0d0d;}.title-bar{fill:#0a1a2a;}
-    .border{fill:none;stroke:#00ffff;stroke-width:1.5;opacity:0.6;}
-    .corner{stroke:#00ffff;stroke-width:1.5;fill:none;opacity:0.7;}
+    .bg{fill:#0d0d0d;}.tb{fill:#0a1a2a;}
+    .bdr{fill:none;stroke:#00ffff;stroke-width:1.5;opacity:0.6;}
+    .cor{stroke:#00ffff;stroke-width:1.5;fill:none;opacity:0.7;}
     .st{font-family:'Courier New',monospace;font-size:15px;fill:#00ffff;font-weight:bold;letter-spacing:2px;}
     .cl{font-family:'Courier New',monospace;font-size:11px;fill:#7B68EE;letter-spacing:3px;}
     .bt{font-family:'Courier New',monospace;font-size:10px;font-weight:bold;}
     .sep{stroke:#00ffff;stroke-width:0.5;opacity:0.15;}
-    .cat1{animation:fi 0.5s ease 0.2s both;}.cat2{animation:fi 0.5s ease 0.5s both;}
-    .cat3{animation:fi 0.5s ease 0.8s both;}.cat4{animation:fi 0.5s ease 1.1s both;}
-    .cat5{animation:fi 0.5s ease 1.4s both;}
-    @keyframes fi{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+    .c1{animation:fi .5s ease .2s both;}.c2{animation:fi .5s ease .5s both;}
+    .c3{animation:fi .5s ease .8s both;}.c4{animation:fi .5s ease 1.1s both;}
+    .c5{animation:fi .5s ease 1.4s both;}
+    @keyframes fi{from{opacity:0;transform:translateY(5px);}to{opacity:1;transform:translateY(0);}}
     .sl{fill:url(#sg);animation:sw 6s linear infinite;}
     @keyframes sw{0%{transform:translateY(-420px);}100%{transform:translateY(420px);}}
   </style>
   <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0%" stop-color="#00ffff" stop-opacity="0"/>
-    <stop offset="50%" stop-color="#00ffff" stop-opacity="0.025"/>
+    <stop offset="50%" stop-color="#00ffff" stop-opacity="0.02"/>
     <stop offset="100%" stop-color="#00ffff" stop-opacity="0"/>
   </linearGradient>
-  <clipPath id="cl2"><rect width="860" height="420"/></clipPath>
+  <clipPath id="cp"><rect width="860" height="420"/></clipPath>
+
+  <!-- Flutter logo -->
+  <g id="flutter"><path d="M1.9 8.8L8.8 2h5.5L5.5 11l-3.6-2.2zm0 5.6l3.6-2.2 5.5 5.5H5.5L1.9 14.4zm5.5.2l3.4 3.3 3.4-3.3-3.4-3.4-3.4 3.4z" fill="white"/></g>
+  <!-- Dart logo -->
+  <g id="dart"><path d="M1 9.5L4.5 1h5L13 4.5v5L9.5 13h-5L1 9.5zm2.2 0L6.5 11.5h3l2.3-2.3V6.2L9.5 3.8h-3L4.2 6.2v3.3z" fill="white"/></g>
+  <!-- React logo -->
+  <g id="react"><circle cx="7" cy="7" r="2" fill="#61DAFB"/><ellipse cx="7" cy="7" rx="6.5" ry="2.2" fill="none" stroke="#61DAFB" stroke-width="1.1"/><ellipse cx="7" cy="7" rx="6.5" ry="2.2" fill="none" stroke="#61DAFB" stroke-width="1.1" transform="rotate(60 7 7)"/><ellipse cx="7" cy="7" rx="6.5" ry="2.2" fill="none" stroke="#61DAFB" stroke-width="1.1" transform="rotate(120 7 7)"/></g>
+  <!-- Next.js logo -->
+  <g id="nextjs"><circle cx="7" cy="7" r="7" fill="black"/><circle cx="7" cy="7" r="6.5" fill="none" stroke="white" stroke-width="0.6"/><path d="M4.5 4.5h1.2l4.8 6.8V4.5h1.1v7.5h-1.2L5.6 5.3v6.7H4.5z" fill="white"/></g>
+  <!-- JavaScript logo -->
+  <g id="js"><rect width="14" height="14" fill="#F7DF1E" rx="1"/><path d="M3 10.5c.3.8.9 1.3 1.8 1.3 1 0 1.6-.5 1.6-1.4V6H7.7v4.4c0 1.8-1 2.7-2.8 2.7-1.4 0-2.3-.7-2.7-1.7L3 10.5zm4.6.1c.4.9 1 1.4 2.1 1.4 1 0 1.7-.5 1.7-1.2 0-.8-.6-1.1-1.8-1.6l-.5-.2C7.7 8.6 7 7.9 7 6.7c0-1.3 1-2.2 2.4-2.2 1 0 1.8.4 2.3 1.2l-1 .7c-.3-.5-.7-.7-1.3-.7-.6 0-1 .3-1 .8 0 .6.4.9 1.4 1.3l.5.2c1.4.6 2.2 1.3 2.2 2.6 0 1.5-1.1 2.4-2.8 2.4-1.6 0-2.6-.8-3.1-1.8l1.1-.6z" fill="#333"/></g>
+  <!-- HTML5 logo -->
+  <g id="html5"><path d="M1 1l1.1 12.7L7 15.2l4.9-1.5L13 1H1zm10 2.6H3.7l.2 2.2h6.7l-.7 7.1L7 14l-2.9-.9-.2-2.4h1.9l.1 1.4L7 12.4l1.1-.3.4-3.9H4.7l-.5-5.6h5.6l-.3-1z" fill="white"/></g>
+  <!-- CSS3 logo -->
+  <g id="css3"><path d="M1 1l1.1 12.7L7 15.2l4.9-1.5L13 1H1zm9.3 3.5l-.3 2.9H5.5l.2 1.8h4.3l-.3 3.4L7 13.3l-2.7-.7-.2-2h1.9l.1 1 .9.2.9-.2.3-2.7H4.2L3.7 4.5h6.6z" fill="white"/></g>
+  <!-- Tailwind logo -->
+  <g id="tailwind"><path d="M7 2C4.8 2 3.5 3.2 3 5.5c.7-1 1.5-1.4 2.5-1.2.5.1 1 .6 1.5 1.1C7.8 6.3 8.8 7 10.5 7c2.2 0 3.5-1.2 4-3.5-.7 1-1.5 1.4-2.5 1.2-.5-.1-1-.6-1.5-1.1C9.7 2.7 8.7 2 7 2zM3.5 7C1.3 7 0 8.2 0 10.5c.7-1 1.5-1.4 2.5-1.2.5.1 1 .6 1.5 1.1C5.3 11.3 6.3 12 8 12c2.2 0 3.5-1.2 4-3.5-.7 1-1.5 1.4-2.5 1.2-.5-.1-1-.6-1.5-1.1C7.2 7.7 6.2 7 4.5 7z" fill="white"/></g>
+  <!-- Bootstrap logo -->
+  <g id="bootstrap"><rect width="14" height="14" rx="3" fill="#7952B3"/><path d="M4.5 3.5h3.7c1.7 0 2.8.8 2.8 2.1 0 .9-.5 1.6-1.4 1.9 1.1.3 1.8 1 1.8 2.1 0 1.5-1.2 2.4-3.1 2.4H4.5V3.5zm1.8 3.5h1.6c.9 0 1.4-.4 1.4-1.1 0-.7-.5-1.1-1.3-1.1H6.3v2.2zm0 3.7h1.8c1 0 1.5-.4 1.5-1.2 0-.7-.6-1.1-1.6-1.1H6.3V10.7z" fill="white"/></g>
+  <!-- Java logo -->
+  <g id="java"><path d="M5.1 10.6s-.5.3.4.4c1.1.1 1.6.1 2.8-.1 0 0 .3.2.8.4-2.9.6-6.5-.2-4-0.7zM4.8 9.1s-.6.4.3.5c1.2.1 2.1.1 3.7-.2 0 0 .2.2.6.3-3.3.6-6.9.1-4.6-.6zM7.2 6.5c.7.8-.2 1.5-.2 1.5s1.7-.9.9-2c-.8-1-1.4-1.5 1.9-3.2 0 0-5.2 1.3-2.6 3.7z" fill="#E76F00"/><path d="M9.9 11.8s.4.3-.4.5c-1.4.4-5.9.5-7.1 0-.4-.2.4-.5.7-.6.1 0 .2 0 .2 0-1.4-.3-2.9-.8 0-1.1 0 0-0.1 0.2 0 0.2-1.1.5.6.6 2.1.3.6-.1 1.2-.2 1.8-.2 0 0-.3-.1-.5-.2-1.8-.3-2.4 0-2.4 0-.5-.1 0-.2 0-.2 2.9-.4 5.4.1 5.6.3zM5.5 7.7s-1.9 1.7.2 2.1c.6.1 1 0 1.7-.1.5-.1 1-.2 1-.2s-.1.1-.2.1c-1 .3-3.4.4-2.7-.9 0 0 0 0 0 0zM9.3 10.9s.3.2-.3.4c-1.1.3-4.5.4-5.5.1-.3-.1.3-.4.5-.4 0 0 .1 0 .1 0 0 0 0 0 0 0z" fill="#5382A1"/></g>
+  <!-- Node.js logo -->
+  <g id="nodejs"><path d="M7 1L1 4.5v7L7 15l6-3.5v-7L7 1zm0 1.2l4.8 2.8v5.6L7 13.4 2.2 10.6V5l4.8-2.8z" fill="none" stroke="#339933" stroke-width="1.2"/><path d="M7 4l3 1.8v3.6L7 11 4 9.4V5.8L7 4z" fill="#339933"/></g>
+  <!-- .NET logo -->
+  <g id="dotnet"><rect width="14" height="14" rx="2" fill="#512BD4"/><text x="1" y="11" font-family="Arial" font-size="9" font-weight="bold" fill="white">.NET</text></g>
+  <!-- Python logo -->
+  <g id="python"><path d="M7 1c-1.6 0-3 .7-3 1.5V4h3v.5H2.5C1.7 4.5 1 5.7 1 7s.7 2.5 1.5 2.5H3v-1.2c0-1 .7-1.8 2-1.8H9c1 0 2-.8 2-1.7V2.5C11 1.7 9.6 1 8 1H7zM5.5 2.2c.3 0 .5.2.5.5s-.2.5-.5.5S5 3 5 2.7s.2-.5.5-.5z" fill="#3776AB"/><path d="M7 13c1.6 0 3-.7 3-1.5V10H7v-.5h4.5c.8 0 1.5-1.2 1.5-2.5s-.7-2.5-1.5-2.5H11v1.2c0 1-.7 1.8-2 1.8H5c-1 0-2 .8-2 1.7v3.3C3 13.3 4.4 14 6 14h1zm1.5-1.2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5.5.2.5.5-.2.5-.5.5z" fill="#FFD43B"/></g>
+  <!-- PHP logo -->
+  <g id="php"><ellipse cx="7" cy="7" rx="6" ry="4" fill="#777BB4"/><text x="2" y="10" font-family="Arial" font-size="7" font-weight="bold" fill="white">php</text></g>
+  <!-- MySQL logo -->
+  <g id="mysql"><path d="M1 4c3.5-2.5 8-2 10.5.5L13 3c-3-3-9-3-12 1zm0 6c3.5 2.5 8 2 10.5-.5L13 11c-3 3-9 3-12-1zm0-3h12" fill="none" stroke="#4479A1" stroke-width="1.5"/><path d="M13 4v6" stroke="#F29111" stroke-width="1.5"/></g>
+  <!-- SQL Server logo -->
+  <g id="sqlserver"><ellipse cx="7" cy="4" rx="5.5" ry="2.5" fill="#CC2927"/><path d="M1.5 4v6c0 1.4 2.5 2.5 5.5 2.5s5.5-1.1 5.5-2.5V4" fill="#CC2927"/><ellipse cx="7" cy="4" rx="5.5" ry="2.5" fill="none" stroke="#ff6b6b" stroke-width="0.8"/></g>
+  <!-- MongoDB logo -->
+  <g id="mongodb"><path d="M7 1c0 0-4 4.5-4 7.5 0 2.2 1.8 4 4 4s4-1.8 4-4C11 5.5 7 1 7 1zm0 10c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z" fill="#47A248"/></g>
+  <!-- Oracle logo -->
+  <g id="oracle"><rect x="1" y="4" width="12" height="6" rx="3" fill="none" stroke="#F80000" stroke-width="1.5"/><text x="2.5" y="9" font-family="Arial" font-size="6" font-weight="bold" fill="#F80000">ORA</text></g>
+  <!-- Figma logo -->
+  <g id="figma"><rect x="3" y="1" width="4" height="4" rx="2" fill="#F24E1E"/><rect x="7" y="1" width="4" height="4" rx="2" fill="#FF7262"/><rect x="3" y="5" width="4" height="4" rx="2" fill="#A259FF"/><rect x="3" y="9" width="4" height="4" rx="2" fill="#0ACF83"/><circle cx="9" cy="7" r="2" fill="#1ABCFE"/></g>
+  <!-- Git logo -->
+  <g id="git"><circle cx="7" cy="7" r="6" fill="none" stroke="#F05033" stroke-width="1.2"/><circle cx="4" cy="5" r="1.2" fill="#F05033"/><circle cx="10" cy="5" r="1.2" fill="#F05033"/><circle cx="4" cy="10" r="1.2" fill="#F05033"/><path d="M4 6.2V8.8M5.2 5h3.6M10 6.2v1.8l-5 2" stroke="#F05033" stroke-width="1"/></g>
+  <!-- GitHub logo -->
+  <g id="github"><path d="M7 1C3.7 1 1 3.7 1 7c0 2.7 1.7 4.9 4.1 5.7.3.1.4-.1.4-.3v-1c-1.7.4-2-.8-2-.8-.3-.7-.7-.9-.7-.9-.6-.4 0-.4 0-.4.6 0 .9.6.9.6.5.9 1.4.6 1.7.5.1-.4.2-.6.4-.8-1.4-.2-2.8-.7-2.8-3 0-.7.2-1.2.6-1.7-.1-.2-.3-.8 0-1.6 0 0 .5-.2 1.7.6.5-.1 1-.2 1.5-.2s1 .1 1.5.2c1.2-.8 1.7-.6 1.7-.6.3.8.1 1.4 0 1.6.4.4.6 1 .6 1.7 0 2.3-1.4 2.8-2.8 3 .2.2.4.6.4 1.1v1.7c0 .2.1.4.4.3C11.3 11.9 13 9.7 13 7c0-3.3-2.7-6-6-6z" fill="white"/></g>
+  <!-- Linux logo -->
+  <g id="linux"><path d="M7 1c-1 0-1.8 1.5-2 3.5-.7.5-1.5 1.5-1.5 2.5 0 .5.2 1 .5 1.5-.3.8-.5 1.8-.5 2.5 0 1.5.8 2.5 2.5 2.5.5 0 1-.1 1.5-.4.5.3 1 .4 1.5.4 1.7 0 2.5-1 2.5-2.5 0-.7-.2-1.7-.5-2.5.3-.5.5-1 .5-1.5 0-1-.8-2-1.5-2.5C9.8 2.5 8 1 7 1z" fill="#FCC624"/><circle cx="5.5" cy="6" r=".8" fill="#333"/><circle cx="8.5" cy="6" r=".8" fill="#333"/><path d="M5.5 9c0 0 .5.8 1.5.8s1.5-.8 1.5-.8" fill="none" stroke="#333" stroke-width=".8"/></g>
 </defs>
+
 <rect width="860" height="420" class="bg" rx="8"/>
-<rect width="860" height="32" class="title-bar" rx="8"/>
-<rect width="860" height="16" class="title-bar" y="16"/>
+<rect width="860" height="32" class="tb" rx="8"/>
+<rect width="860" height="16" class="tb" y="16"/>
 <circle cx="20" cy="16" r="5" fill="#ff5f57"/>
 <circle cx="36" cy="16" r="5" fill="#ffbd2e"/>
 <circle cx="52" cy="16" r="5" fill="#28c840"/>
 <text x="430" y="21" text-anchor="middle" font-family="Courier New,monospace" font-size="12" fill="#7B68EE">shakila@nsbm: ~/tech-stack</text>
-<rect x="1" y="1" width="858" height="418" class="border" rx="8"/>
-<polyline points="1,50 1,32 20,32" class="corner"/>
-<polyline points="840,32 858,32 858,50" class="corner"/>
-<polyline points="1,370 1,388 20,388" class="corner"/>
-<polyline points="840,388 858,388 858,370" class="corner"/>
-<g clip-path="url(#cl2)">
+<rect x="1" y="1" width="858" height="418" class="bdr" rx="8"/>
+<polyline points="1,50 1,32 20,32" class="cor"/>
+<polyline points="840,32 858,32 858,50" class="cor"/>
+<polyline points="1,370 1,388 20,388" class="cor"/>
+<polyline points="840,388 858,388 858,370" class="cor"/>
+
+<g clip-path="url(#cp)">
 <text x="24" y="58" class="st">$ cat tech_stack.config</text>
 <line x1="24" y1="66" x2="836" y2="66" stroke="#00ffff" stroke-width="1" opacity="0.4"/>
 
 <!-- MOBILE -->
-<g class="cat1">
+<g class="c1">
   <text x="24" y="84" class="cl">▸ MOBILE</text>
   <rect x="24" y="90" width="96" height="26" fill="#02569B" rx="4"/>
-  <text x="34" y="107" class="bt" fill="#54C5F8">▶</text><text x="46" y="107" class="bt" fill="white">FLUTTER</text>
+  <use href="#flutter" transform="translate(30,97)"/>
+  <text x="50" y="107" class="bt" fill="white">FLUTTER</text>
   <rect x="128" y="90" width="76" height="26" fill="#0175C2" rx="4"/>
-  <text x="138" y="107" class="bt" fill="white">◈ DART</text>
+  <use href="#dart" transform="translate(134,97)"/>
+  <text x="152" y="107" class="bt" fill="white">DART</text>
   <line x1="24" y1="124" x2="836" y2="124" class="sep"/>
 </g>
 
 <!-- FRONTEND -->
-<g class="cat2">
+<g class="c2">
   <text x="24" y="140" class="cl">▸ FRONTEND</text>
   <rect x="24" y="146" width="80" height="26" fill="#20232A" rx="4"/>
-  <text x="34" y="163" class="bt" fill="#61DAFB">⊛ REACT</text>
-  <rect x="112" y="146" width="82" height="26" fill="#111" rx="4"/>
-  <text x="122" y="163" class="bt" fill="white">▲ NEXT.JS</text>
-  <rect x="202" y="146" width="108" height="26" fill="#F7DF1E" rx="4"/>
-  <text x="212" y="163" class="bt" fill="#000">JS JAVASCRIPT</text>
-  <rect x="318" y="146" width="76" height="26" fill="#E34F26" rx="4"/>
-  <text x="328" y="163" class="bt" fill="white">⬡ HTML5</text>
-  <rect x="402" y="146" width="68" height="26" fill="#1572B6" rx="4"/>
-  <text x="412" y="163" class="bt" fill="white">◻ CSS3</text>
-  <rect x="478" y="146" width="100" height="26" fill="#06B6D4" rx="4"/>
-  <text x="488" y="163" class="bt" fill="white">~ TAILWIND</text>
-  <rect x="586" y="146" width="104" height="26" fill="#7952B3" rx="4"/>
-  <text x="596" y="163" class="bt" fill="white">B BOOTSTRAP</text>
+  <use href="#react" transform="translate(30,153)"/>
+  <text x="50" y="163" class="bt" fill="#61DAFB">REACT</text>
+  <rect x="112" y="146" width="84" height="26" fill="#111" rx="4"/>
+  <use href="#nextjs" transform="translate(118,153)"/>
+  <text x="138" y="163" class="bt" fill="white">NEXT.JS</text>
+  <rect x="204" y="146" width="110" height="26" fill="#F7DF1E" rx="4"/>
+  <use href="#js" transform="translate(210,153)"/>
+  <text x="230" y="163" class="bt" fill="#333">JAVASCRIPT</text>
+  <rect x="322" y="146" width="76" height="26" fill="#E34F26" rx="4"/>
+  <use href="#html5" transform="translate(328,153)"/>
+  <text x="348" y="163" class="bt" fill="white">HTML5</text>
+  <rect x="406" y="146" width="70" height="26" fill="#1572B6" rx="4"/>
+  <use href="#css3" transform="translate(412,153)"/>
+  <text x="432" y="163" class="bt" fill="white">CSS3</text>
+  <rect x="484" y="146" width="98" height="26" fill="#06B6D4" rx="4"/>
+  <use href="#tailwind" transform="translate(490,153)"/>
+  <text x="510" y="163" class="bt" fill="white">TAILWIND</text>
+  <rect x="590" y="146" width="104" height="26" fill="#7952B3" rx="4"/>
+  <use href="#bootstrap" transform="translate(596,153)"/>
+  <text x="616" y="163" class="bt" fill="white">BOOTSTRAP</text>
   <line x1="24" y1="180" x2="836" y2="180" class="sep"/>
 </g>
 
 <!-- BACKEND -->
-<g class="cat3">
+<g class="c3">
   <text x="24" y="196" class="cl">▸ BACKEND</text>
   <rect x="24" y="202" width="74" height="26" fill="#ED8B00" rx="4"/>
-  <text x="34" y="219" class="bt" fill="white">☕ JAVA</text>
+  <use href="#java" transform="translate(30,209)"/>
+  <text x="50" y="219" class="bt" fill="white">JAVA</text>
   <rect x="106" y="202" width="90" height="26" fill="#339933" rx="4"/>
-  <text x="116" y="219" class="bt" fill="white">⬡ NODE.JS</text>
-  <rect x="204" y="202" width="70" height="26" fill="#512BD4" rx="4"/>
-  <text x="214" y="219" class="bt" fill="white">⬡ .NET</text>
-  <rect x="282" y="202" width="88" height="26" fill="#3776AB" rx="4"/>
-  <text x="292" y="219" class="bt" fill="white">🐍 PYTHON</text>
-  <rect x="378" y="202" width="66" height="26" fill="#777BB4" rx="4"/>
-  <text x="388" y="219" class="bt" fill="white">&lt;? PHP</text>
+  <use href="#nodejs" transform="translate(112,209)"/>
+  <text x="132" y="219" class="bt" fill="white">NODE.JS</text>
+  <rect x="204" y="202" width="72" height="26" fill="#512BD4" rx="4"/>
+  <use href="#dotnet" transform="translate(210,209)"/>
+  <text x="230" y="219" class="bt" fill="white">.NET</text>
+  <rect x="284" y="202" width="88" height="26" fill="#3776AB" rx="4"/>
+  <use href="#python" transform="translate(290,209)"/>
+  <text x="310" y="219" class="bt" fill="white">PYTHON</text>
+  <rect x="380" y="202" width="66" height="26" fill="#777BB4" rx="4"/>
+  <use href="#php" transform="translate(386,209)"/>
+  <text x="406" y="219" class="bt" fill="white">PHP</text>
   <line x1="24" y1="236" x2="836" y2="236" class="sep"/>
 </g>
 
 <!-- DATABASES -->
-<g class="cat4">
+<g class="c4">
   <text x="24" y="252" class="cl">▸ DATABASES</text>
   <rect x="24" y="258" width="84" height="26" fill="#4479A1" rx="4"/>
-  <text x="34" y="275" class="bt" fill="#F29111">My</text><text x="52" y="275" class="bt" fill="white">SQL</text>
+  <use href="#mysql" transform="translate(30,265)"/>
+  <text x="50" y="275" class="bt" fill="white">MYSQL</text>
   <rect x="116" y="258" width="106" height="26" fill="#CC2927" rx="4"/>
-  <text x="126" y="275" class="bt" fill="white">▣ SQL SERVER</text>
+  <use href="#sqlserver" transform="translate(122,265)"/>
+  <text x="142" y="275" class="bt" fill="white">SQL SERVER</text>
   <rect x="230" y="258" width="100" height="26" fill="#47A248" rx="4"/>
-  <text x="240" y="275" class="bt" fill="white">🍃 MONGODB</text>
+  <use href="#mongodb" transform="translate(236,265)"/>
+  <text x="256" y="275" class="bt" fill="white">MONGODB</text>
   <rect x="338" y="258" width="84" height="26" fill="#F80000" rx="4"/>
-  <text x="348" y="275" class="bt" fill="white">◎ ORACLE</text>
+  <use href="#oracle" transform="translate(344,265)"/>
+  <text x="364" y="275" class="bt" fill="white">ORACLE</text>
   <line x1="24" y1="292" x2="836" y2="292" class="sep"/>
 </g>
 
 <!-- TOOLS -->
-<g class="cat5">
+<g class="c5">
   <text x="24" y="308" class="cl">▸ TOOLS</text>
   <rect x="24" y="314" width="80" height="26" fill="#F24E1E" rx="4"/>
-  <text x="34" y="331" class="bt" fill="white">⊞ FIGMA</text>
+  <use href="#figma" transform="translate(30,319) scale(1.1)"/>
+  <text x="50" y="331" class="bt" fill="white">FIGMA</text>
   <rect x="112" y="314" width="66" height="26" fill="#F05033" rx="4"/>
-  <text x="122" y="331" class="bt" fill="white">⑂ GIT</text>
+  <use href="#git" transform="translate(118,320)"/>
+  <text x="138" y="331" class="bt" fill="white">GIT</text>
   <rect x="186" y="314" width="88" height="26" fill="#24292e" rx="4"/>
-  <text x="196" y="331" class="bt" fill="white">🐙 GITHUB</text>
+  <use href="#github" transform="translate(192,320)"/>
+  <text x="212" y="331" class="bt" fill="white">GITHUB</text>
   <rect x="282" y="314" width="78" height="26" fill="#FCC624" rx="4"/>
-  <text x="292" y="331" class="bt" fill="black">🐧 LINUX</text>
+  <use href="#linux" transform="translate(288,320)"/>
+  <text x="308" y="331" class="bt" fill="black">LINUX</text>
 </g>
 
 <line x1="24" y1="352" x2="836" y2="352" stroke="#00ffff" stroke-width="0.5" opacity="0.3"/>
