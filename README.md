@@ -15,25 +15,7 @@
 
 <br/>
 
-```bash
-╔══════════════════════════════════════════════════════════════╗
-║  $ whoami                                                    ║
-╠══════════════════════════════════════════════════════════════╣
-║                                                              ║
-║  > Shakila Praween                                           ║
-║  > BSc (Hons) Software Engineering @ NSBM Green University  ║
-║  > Western Province, Sri Lanka 🇱🇰                           ║
-║  > Expected Graduation: December 2027                        ║
-║                                                              ║
-║  $ cat current_mission.txt                                   ║
-║  > Building Bidzy 🔨 — stay tuned!                          ║
-║  > Learning: .NET  |  Next.js                               ║
-║                                                              ║
-║  $ cat core_values.txt                                       ║
-║  > Clean Code  |  Test-Driven  |  User-First Design         ║
-║                                                              ║
-╚══════════════════════════════════════════════════════════════╝
-```
+![whoami](https://raw.githubusercontent.com/Shakila46/Shakila46/main/whoami_typed.svg)
 
 <br/>
 
@@ -117,15 +99,11 @@
 
 <br/>
 
-### 🐍 CONTRIBUTION SNAKE
+### 📅 CONTRIBUTION GRAPH
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shakila46/Shakila46/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shakila46/Shakila46/output/github-contribution-grid-snake.svg"/>
-  <img alt="snake animation" src="https://raw.githubusercontent.com/Shakila46/Shakila46/output/github-contribution-grid-snake.svg"/>
-</picture>
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Shakila46&bg_color=0d0d0d&color=00ffff&line=00ffff&point=7B68EE&area=true&area_color=00ffff&hide_border=true&custom_title=Shakila%27s%20Contribution%20Graph)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
