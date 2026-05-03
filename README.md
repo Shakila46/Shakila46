@@ -87,13 +87,7 @@
 
 <div align="center">
 
-| 📈 Metric | 🔢 Value |
-|:---|:---:|
-| 🗓️ GitHub Since | Aug 2024 |
-| 💻 Total Contributions | 101+ |
-| 🔥 Longest Streak | 4 days |
-| 🌐 Languages Used | 15+ |
-| 📦 Repositories | 13+ |
+![stats](https://raw.githubusercontent.com/Shakila46/Shakila46/main/stats_table.svg)
 
 </div>
 
