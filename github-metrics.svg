@@ -52,7 +52,7 @@
 </div>
 <div class="stdin"><span class="ps1-path">shakila46@metrics</span>:<span class="ps1-location">~</span># ls -lh github/repositories</div><div class="stdout">Total 14 repositories - 68.4 MB
 -r--  <b>    0</b>  stargazers
--r--  <b>    6</b>  forks
+-r--  <b>    7</b>  forks
 -r--  <b>    2</b>  watchers
 dr-x  <b>    0</b>  packages
 </div>
