@@ -52,8 +52,8 @@
 </div>
 <div class="stdin"><span class="ps1-path">shakila46@metrics</span>:<span class="ps1-location">~</span># ls -lh github/repositories</div><div class="stdout">Total 15 repositories - 321 MB
 -r--  <b>    0</b>  stargazers
--r--  <b>    8</b>  forks
--r--  <b>    2</b>  watchers
+-r--  <b>    9</b>  forks
+-r--  <b>    3</b>  watchers
 dr-x  <b>    0</b>  packages
 </div>
 <div class="stdin"><span class="ps1-path">shakila46@metrics</span>:<span class="ps1-location">~</span># locale</div><div class="stdout"><b>TYPESCRIPT  </b> [#############       ] 60.99%
