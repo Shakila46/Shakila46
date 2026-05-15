@@ -38,7 +38,7 @@
   followed by <b>2</b> users
 </div>
 <div class="stdin"><span class="ps1-path">shakila46@metrics</span>:<span class="ps1-location">~</span># git status</div><div class="stdout"><b>Recent activity</b>
-  <b>  115</b> commits
+  <b>  118</b> commits
   <b>    0</b> pull requests reviewed
   <b>   12</b> pull requests opened
   <b>    3</b> issues opened
@@ -56,11 +56,11 @@
 -r--  <b>    3</b>  watchers
 dr-x  <b>    0</b>  packages
 </div>
-<div class="stdin"><span class="ps1-path">shakila46@metrics</span>:<span class="ps1-location">~</span># locale</div><div class="stdout"><b>TYPESCRIPT  </b> [#############       ] 60.99%
-<b>C#          </b> [########            ] 36.29%
-<b>PYTHON      </b> [#                   ] 1.40 %
-<b>JAVASCRIPT  </b> [#                   ] 0.91 %
-<b>SHELL       </b> [#                   ] 0.42 %
+<div class="stdin"><span class="ps1-path">shakila46@metrics</span>:<span class="ps1-location">~</span># locale</div><div class="stdout"><b>TYPESCRIPT  </b> [#############       ] 61.95%
+<b>C#          </b> [########            ] 35.38%
+<b>PYTHON      </b> [#                   ] 1.37 %
+<b>JAVASCRIPT  </b> [#                   ] 0.89 %
+<b>SHELL       </b> [#                   ] 0.41 %
 </div>
 <div class="stdin"><span class="ps1-path">shakila46@metrics</span>:<span class="ps1-location">~</span># ncal -MB11</div><div class="stdout"><div class="isocalendar">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="margin-top: -130px;" viewBox="0,0 480,270">
