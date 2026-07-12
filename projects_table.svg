@@ -122,7 +122,7 @@
   <text x="34"  y="263" class="td">💰 Expense Tracker Implementation</text>
   <text x="360" y="263" class="stack">React · Node.js · MongoDB</text>
   <text x="680" y="263" class="done">■ COMPLETE</text>
-  <line x1="24" y1="272" x2="836" y2="272" class="sep"/>
+  <line x1="24" y1="302" x2="836" y2="302" class="sep"/>
 </g>
 
 <!-- Footer -->
