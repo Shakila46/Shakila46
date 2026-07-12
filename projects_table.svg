@@ -119,9 +119,9 @@
   <!-- Row 7: SQA -->
 <g class="row6">
   <rect x="24" y="244" width="812" height="28" class="row-hover"/>
-  <text x="34"  y="263" class="td">💰 Expense Tracker Implementation</text>
-  <text x="360" y="263" class="stack">React · Node.js · MongoDB</text>
-  <text x="680" y="263" class="done">■ COMPLETE</text>
+  <text x="34"  y="293" class="td">💰 Expense Tracker Implementation</text>
+  <text x="360" y="293" class="stack">React · Node.js · MongoDB</text>
+  <text x="680" y="293" class="done">■ COMPLETE</text>
   <line x1="24" y1="302" x2="836" y2="302" class="sep"/>
 </g>
 
