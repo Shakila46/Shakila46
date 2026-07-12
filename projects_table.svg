@@ -116,6 +116,15 @@
   <line x1="24" y1="272" x2="836" y2="272" class="sep"/>
 </g>
 
+  <!-- Row 7: SQA -->
+<g class="row6">
+  <rect x="24" y="244" width="812" height="28" class="row-hover"/>
+  <text x="34"  y="263" class="td">💰 Expense Tracker Implementation</text>
+  <text x="360" y="263" class="stack">React · Node.js · MongoDB</text>
+  <text x="680" y="263" class="done">■ COMPLETE</text>
+  <line x1="24" y1="272" x2="836" y2="272" class="sep"/>
+</g>
+
 <!-- Footer -->
 <text x="34"  y="298" font-family="Courier New,monospace" font-size="11" fill="#7B68EE">6 projects found  |  6 completed  |  0 in-progress</text>
 <text x="720" y="298" font-family="Courier New,monospace" font-size="11" fill="#00ffff" opacity="0.5">[ OK ]</text>
